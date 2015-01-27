@@ -1,4 +1,5 @@
 //Daniel Moncada
+//Jan 25, 2015
 //Welcome Class Java Program
 //
 // first compile the program
