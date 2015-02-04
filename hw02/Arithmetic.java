@@ -37,21 +37,24 @@ public class Arithmetic {
         double costWithTax$; //total cost of everything with tax
         
         totalSockCost$= sockCost$ * nSocks; 
-        sockCostTax$= (sockCost$ * ( 1 + taxPercent));
+        sockCostTax$= ((sockCost$ * ( 1 + taxPercent) ) * nSocks);
         totalGlassCost$= glassCost$ * nGlasses;
-        glassCostTax$= (glassCost$ * ( 1 + taxPercent));
+        glassCostTax$=( (glassCost$ * ( 1 + taxPercent)) * nGlasses);
         totalEnvCost$=(envelopeCost$ * nEnvelopes);
-        envCostTax$=(envelopeCost$*(1 + taxPercent));
+        envCostTax$=((envelopeCost$*(1 + taxPercent))*nEnvelopes);
         costBeforeTax$= totalEnvCost$ + totalGlassCost$ + totalSockCost$;
         costWithTax$= costBeforeTax$ * (1 + taxPercent);
         
         
         System.out.println("You are buying " + nSocks + " socks for " + sockCost$ + " each" );
-        System.out.println(nSocks + " for " + sockCost$ + " each " + " with a tax of " + taxPercent+ " would come out to " + sockCostTax$ + " for each sock ");
+        System.out.println(nSocks + " for " + sockCost$ + " each " + " with a tax of " + taxPercent+ " would come out to " + sockCostTax$);
+        System.out.println("Before tax, this would be " + totalSockCost$ );
         System.out.println("You are buying " + nGlasses + " glasses for " + glassCost$ + " each" );
-        System.out.println(nGlasses + " for " + glassCost$ + " each " + " with a tax of " + taxPercent+ " would come out to " + glassCostTax$ + " for each sock ");
+        System.out.println(nGlasses + " for " + glassCost$ + " each " + " with a tax of " + taxPercent+ " would come out to " + glassCostTax$);
+        System.out.println("Before tax, this would be " + totalGlassCost$ );
         System.out.println("You are buying " + nEnvelopes + " envelopes for " + envelopeCost$ + " each" );
-        System.out.println(nEnvelopes + " for " + envelopeCost$ + " each " + " with a tax of " + taxPercent+ " would come out to " + envCostTax$ + " for each sock ");
+        System.out.println(nEnvelopes + " for " + envelopeCost$ + " each " + " with a tax of " + taxPercent+ " would come out to " + envCostTax$);
+        System.out.println("Before tax, this would be " + totalEnvCost$ );
         System.out.println("Without tax, this would cost " + costBeforeTax$);
         System.out.println("With tax, this will cost you " + costWithTax$);
         
