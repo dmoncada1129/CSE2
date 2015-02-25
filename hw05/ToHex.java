@@ -212,6 +212,6 @@ However, if a decimal number is 10 or higher, then the number’s hexadecimal va
 		       }
 		       
 			
-				System.out.println(r4+r3+g4+g3+b4+b3);
+				System.out.println("The decimal numbers " + "R: " + r + " G: " + g + " B " +  b + " is represented in hexadecimal as: " + r4+r3+g4+g3+b4+b3);
 		}
 }
