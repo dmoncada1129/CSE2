@@ -4,7 +4,7 @@
 //FEB 7, 2015
 //Professor Chen
 
-
+()
 import java.util.Scanner; //importing the scanner
 import java.text.DecimalFormat; //imporating a tool to truncate the decimals
 public class FourDigits {
