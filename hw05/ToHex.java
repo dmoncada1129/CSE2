@@ -38,13 +38,13 @@ However, if a decimal number is 10 or higher, then the number’s hexadecimal va
 		        if (r >= 0 && r <= 255) { //condition that it has to be within a range of values
 		           
 		          if (r2 <=9 && r2 >= 0) { //if it is inbetween 9 and 0, condition that it will print out that #
-		               r3 = ""+r2;
+		               r3 = "0"+r2;
 		          }
 		          else if (r2 >= 10 && r2 <= 15) { //if in between 10 and 15, follow into swithc statement
 		              switch (r2) {
 		                  case 10:
-		                       r3 = ("A");
-		                       break;
+		                       			r3 = ("A");
+		                    			 break;
 		                   case 11:
 		                   				r3 = ("B");
 		                   				break;
