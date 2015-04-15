@@ -110,10 +110,10 @@ public class CSE2Linear {
             }
         }
         if(check1){
-            System.out.println("found "+j+"with "+counter+"iterations");
+            System.out.println("did not find"+j+"with "+counter+"iterations");
         }
         else{
-            System.out.println("did not find "+j+"with "+counter+"iterations");
+            System.out.println("found"+j+"with "+counter+"iterations");
         }
         return;
     }
@@ -137,10 +137,10 @@ public class CSE2Linear {
                 low=mid+1;
             }
             if(!check){
-                System.out.println("found "+key+"with "+counter+"iterations");
+                System.out.println("did not find "+key+"with "+counter+"iterations");
             }
             else{
-                System.out.println("did not find "+key+"with "+counter+"iterations");
+                System.out.println("found "+key+"with "+counter+"iterations");
             }
         }
         return;
