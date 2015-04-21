@@ -8,20 +8,20 @@ public class RunFactorial {
             
                 Scanner myScanner; 
                 int x = 1;
-                int factorial=1; //declaring the favtorial container
+                int factorial=1; 
                 int input;
                 myScanner = new Scanner(System.in);
                 System.out.println("put in an int and i will show you its factorial");
-                while (true) { //declaring the while loop 
+                while (true) { 
                         input = myScanner.nextInt();
                         if (input<9 || input >16) {
-                                System.out.println("please enter a valid int"); //inputting the condition for the ivnalid inputs
+                                System.out.println("please enter a valid int"); 
                         }
                         else{
-                                break; //breaking out of the loop if it works
+                                break; 
                         }
                 }
-                for (int i=input; i >0; i--) { //the math for the factorial value
+                for (int i=input; i >0; i--) { 
                         factorial *= i;
                 }
                 System.out.println("this is my input "+ input + "and this is my factorial " + factorial);
